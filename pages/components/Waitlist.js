@@ -27,9 +27,12 @@ function Header() {
 
         {/* Left */}
         <div className="hidden space-x-6 items-center lg:flex">
-          <button className="uppercase hover:text-[#050b7d] mr-7">
+          <a
+            href="https://discord.gg/sn5jn8nMSa"
+            className="uppercase hover:text-[#050b7d] mr-7"
+          >
             Join The Community
-          </button>
+          </a>
           <button className="waitlist-btn" onClick={waitlistHandler}>
             <span className="m-7">Join The Waitlist</span>
           </button>
