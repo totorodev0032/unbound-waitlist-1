@@ -14,8 +14,8 @@ function Header() {
     setVisible(!visible);
   };
   return (
-    <div className="bg-gradient-to-br from-[#B4C2F2] via-[#F5F7FFAF] to-[#FFFFFF]">
-      <div className="flex w-full px-12 py-0 justify-between md:px-48">
+    <div className="bg-gradient-to-br w-full from-[#B4C2F2] via-[#F5F7FFAF] to-[#FFFFFF]">
+      <div className="flex w-full py-0  px-12 justify-between md:px-48">
         {/* Right */}
         <Image
           src={logo}

@@ -1,13 +1,13 @@
-import Image from "next/image";
-import hero from "../../public/Skills/newgen-01 1.svg";
-import python from "../../public/Skills/4 1.svg";
-import js from "../../public/Skills/3 1.svg";
-import java from "../../public/Skills/6 1.svg";
-import golang from "../../public/Skills/7 1.svg";
-import react from "../../public/Skills/1 1.svg";
-import node from "../../public/Skills/2 1.svg";
-import firebase from "../../public/Skills/8 1.svg";
-import css from "../../public/Skills/5 1.svg";
+import Image from 'next/image';
+import hero from '../../public/Skills/newgen-01 1.svg';
+import python from '../../public/Skills/4 1.svg';
+import js from '../../public/Skills/3 1.svg';
+import java from '../../public/Skills/6 1.svg';
+import golang from '../../public/Skills/7 1.svg';
+import react from '../../public/Skills/1 1.svg';
+import node from '../../public/Skills/2 1.svg';
+import firebase from '../../public/Skills/8 1.svg';
+import css from '../../public/Skills/5 1.svg';
 
 function Skills() {
   return (
@@ -21,7 +21,7 @@ function Skills() {
       />
 
       <div className="flex flex-col w-96 md:w-[40rem] md:pl-20 items-center">
-        <p className="font-bold text-4xl px-12 pb-6 md:text-5xl">
+        <p className="font-bold text-3xl mx-12 pb-6 md:text-5xl">
           Learn New Skills with New gen developer platform
         </p>
         {/* Top */}
