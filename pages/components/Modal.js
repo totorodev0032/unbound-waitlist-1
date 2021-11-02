@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
-import styled from 'styled-components';
-import { EmailSubmit } from '../api/newRegistration';
-import { VscChromeClose } from 'react-icons/vsc';
+import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
+import styled from "styled-components";
+import { EmailSubmit } from "../api/newRegistration";
+import { VscChromeClose } from "react-icons/vsc";
 
 const Modal = ({ visible, onClose }) => {
   const [isBrowser, setIsBrowser] = useState(false);
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = React.useState(false);
 
   useEffect(() => {
@@ -19,8 +19,8 @@ const Modal = ({ visible, onClose }) => {
     console.log(email);
   };
   const submitEmail = async (e) => {
-    if (email == '') {
-      alert('Email feild is empty');
+    if (email == "") {
+      alert("Email feild is empty");
     } else {
       setSubmitted(true);
       await EmailSubmit(email);
@@ -60,7 +60,7 @@ const Modal = ({ visible, onClose }) => {
   if (isBrowser) {
     return ReactDOM.createPortal(
       modalContent,
-      document.getElementById('modal-root')
+      document.getElementById("modal-root")
     );
   } else {
     return null;
@@ -110,7 +110,7 @@ const Form = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  display: ${(props) => (props.isSubmitted ? 'none' : 'block')};
+  display: ${(props) => (props.isSubmitted ? "none" : "block")};
 `;
 
 const Input = styled.input`
@@ -120,7 +120,7 @@ const Input = styled.input`
   font-size: 18px;
   padding: 5px 10px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 300px;
 `;
 const Button = styled.button`
   width: 300px;
@@ -130,7 +130,7 @@ const Message = styled.h2`
   font-size: 18px;
   font-weight: 500;
   /* display:block; */
-  display: ${(props) => (props.isSubmitted ? 'block' : 'none')};
+  display: ${(props) => (props.isSubmitted ? "block" : "none")};
 `;
 
 const Close = styled.span`
