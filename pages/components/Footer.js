@@ -16,7 +16,6 @@ export default Footer;
 const Container = styled.div`
   padding: 20px;
   text-align: center;
-  ${'' /* background-color: #f5f7ffaf; */}
 `;
 
 const Link = styled.a`
