@@ -3,6 +3,7 @@ import emoji from "../../public/Tracks logo/emoji_events.svg";
 import military from "../../public/Tracks logo/military_tech.svg";
 import connect from "../../public/Tracks logo/connect_without_contact.svg";
 import hero from "../../public/Tracks logo/Flow-01 1.svg";
+import styled from "styled-components";
 
 function Tracks() {
   return (
@@ -10,12 +11,12 @@ function Tracks() {
       <div className="flex flex-col justify-between items-center md:w-[45rem] lg:w-[90rem] md:pl-48 md:flex-row">
         <div className="flex flex-col md:grid grid-cols-[20] mt-20 text-blue-50">
           <div className="flex md:contents">
-            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+            <TrackPoint className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full w-[1px] bg-[#1563FC] pointer-events-none"></div>
               </div>
               <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#3A2DCE] shadow border-4 border-solid border-[#CECCE3]"></div>
-            </div>
+            </TrackPoint>
             <div className=" col-start-6 col-end-10 p-4 rounded-xl my-4 md:ml-16 shadow-md flex justify-between items-center w-80 md:w-96">
               <h3 className="font-semibold text-lg mb-1 text-black">
                 Choose Tracks
@@ -27,12 +28,12 @@ function Tracks() {
           </div>
 
           <div className="flex md:contents">
-            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+            <TrackPoint className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full w-[1px] bg-[#1563FC] pointer-events-none"></div>
               </div>
               <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#3A2DCE] shadow border-4 border-solid border-[#CECCE3]"></div>
-            </div>
+            </TrackPoint>
             <div className=" col-start-6 col-end-10 p-4 rounded-xl my-4 md:ml-16 mr-auto shadow-md flex justify-between items-center w-80 md:w-96">
               <h3 className="font-semibold text-lg mb-1 text-black">
                 Solve Challenges
@@ -43,12 +44,12 @@ function Tracks() {
             </div>
           </div>
           <div className="flex md:contents">
-            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+            <TrackPoint className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full w-[1px] bg-[#1563FC] pointer-events-none"></div>
               </div>
               <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#3A2DCE] shadow border-4 border-solid border-[#CECCE3]"></div>
-            </div>
+            </TrackPoint>
             <div className="bg-white col-start-6 col-end-10 p-4 rounded-xl my-4 md:ml-16 mr-auto shadow-md flex justify-between items-center w-80 md:w-96">
               <h3 className="font-semibold text-lg mb-1 text-black">
                 Engage with Community
@@ -59,12 +60,12 @@ function Tracks() {
             </div>
           </div>
           <div className="flex md:contents">
-            <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+            <TrackPoint className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full w-[1px] bg-[#1563FC] pointer-events-none"></div>
               </div>
               <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#3A2DCE] shadow border-4 border-solid border-[#CECCE3]"></div>
-            </div>
+            </TrackPoint>
             <div className="bg-white col-start-6 col-end-10 p-4 rounded-xl my-4 md:ml-16 mr-auto shadow-md flex justify-between items-center w-80 md:w-96">
               <h3 className="font-semibold text-lg mb-1 text-black">
                 Get Feedback
@@ -76,7 +77,7 @@ function Tracks() {
           </div>
         </div>
         <div className="mt-28">
-          <Image src={hero} alt="hero" />
+          <IImage src={hero} alt="hero" />
         </div>
       </div>
     </>
@@ -84,3 +85,15 @@ function Tracks() {
 }
 
 export default Tracks;
+
+const TrackPoint = styled.div`
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+`;
+
+const IImage = styled(Image)`
+  @media screen and (max-width: 420px) {
+    width: 350px;
+  }
+`;
