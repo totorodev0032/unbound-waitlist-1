@@ -1,12 +1,12 @@
-import Image from "next/image";
-import logo from "../../public/unbound logo 1.svg";
-import hero from "../../public/hero-1.svg";
-import emoji from "../../public/Waitlist Logos/emoji_events.svg";
-import library from "../../public/Waitlist Logos/local_library.svg";
-import terrain from "../../public/Waitlist Logos/terrain.svg";
-import styled from "styled-components";
-import Modal from "./Modal";
-import { useState } from "react";
+import Image from 'next/image';
+import logo from '../../public/unbound logo 1.svg';
+import hero from '../../public/hero-1.svg';
+import emoji from '../../public/Waitlist Logos/emoji_events.svg';
+import library from '../../public/Waitlist Logos/local_library.svg';
+import terrain from '../../public/Waitlist Logos/terrain.svg';
+import styled from 'styled-components';
+import Modal from './Modal';
+import { useState } from 'react';
 
 function Header() {
   const [visible, setVisible] = useState(false); //modal visibility
