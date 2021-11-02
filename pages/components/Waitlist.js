@@ -42,12 +42,11 @@ function Header() {
       <section className="flex flex-col pl-12 pr-12 py-10 justify-between items-center md:pl-48 md:flex-row">
         <div className="flex flex-col ">
           <p className="font-bold text-3xl md:text-5xl">
-            Learn and Become a <br /> Professional Developer
+            Learn and Become a Professional Developer
           </p>
           <p className="py-4 text-gray-500 ">
-            Intuition, Mindset and Vision are crucial for developers,
-            <br />
-            and with Unbound, we will instil this in you!
+            Intuition, Mindset and Vision are crucial for developers, and with
+            Unbound, we will instil this in you!
           </p>
           <button
             className="waitlist-btn mt-12 w-full lg:w-[217px]"
